@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    /* remove margins and scroll bars */
+    margin: 0;
+    /* color text */
+    color: white;  
+    font-family: 'Poppins', sans-serif;
+    box-sizing: content-box;
+  }
+  
+header {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+header img {
+  width: 150px;
+  margin: 30px 100px;
+}
+
+.titulo {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.inicial {
+  align-items: baseline;
+  margin-left: 10vw;
+  animation: fade-in 4s ease-in-out 5s 1 forwards;
+}
+
+h3 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+h3 span {
+  font-size: 80px;
+  display: block;
+  color: #b68439;
+}
+.button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #b68439;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 40px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.segundo {
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  margin-right: 10vw;
+  opacity: 0;
+}
+
+.section-title {
+  font-size: 70px;
+}
+.section-subtitle {
+  font-size: 50px;
+}
+
+.tercero {
+  align-items: baseline;
+  padding-top: 10%;
+  margin-left: 10vw;
+}
+
+.cuarto {
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.cuarto div {
+  margin-bottom: 7vw;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.close3dgallery {
+  position: absolute;
+  opacity: 1;
+  z-index: 4;
+  left: 5vw;
+  top: 3vh;
+  background-color: #ffffff00;
+  color: #484848;
+  font-size: 22px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+#scene-container {
+    /* tell our scene container to take up the full page */
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
