@@ -1,6 +1,7 @@
+##Credits
+"Fender PJ Bass" (https://skfb.ly/o9xXx) by Ryan_Nein is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 ## Setup
-Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
 
 ``` bash
@@ -10,6 +11,3 @@ npm install
 # Run the local server at localhost:8080
 npm run dev
 
-# Build for production in the dist/ directory
-npm run build
-```
