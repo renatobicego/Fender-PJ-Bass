@@ -5,9 +5,7 @@ import { createRenderer } from "./systems/renderer"
 import { Resizer } from "./systems/Resizer"
 import { createControls } from "./systems/controls"
 import { createBass } from "./components/bass/bass.js"
-import { AxesHelper } from "three"
 import { createFloor } from "./components/floor"
-import { GUI } from 'dat.gui'
 import { ScrollAnimation } from "./systems/ScrollAnimation"
 import { Loop } from "./systems/Loop"
 import { disableScroll, enableScroll } from "./script"
@@ -27,7 +25,7 @@ class World {
 
         controls = createControls(camera, renderer.domElement)
 
-        const {light1, light2, light3} = createLight(camera)
+        const {light1, light2, light3} = createLight()
         scene.add(light1, light2, light3)
 
         resizer = new Resizer(container, camera, renderer)

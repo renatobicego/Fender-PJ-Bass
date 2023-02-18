@@ -4,6 +4,8 @@ let newSection
 let onAnimation = false
 let bass
 
+gsap.registerPlugin(ScrollTrigger)
+
 class ScrollAnimation{
     constructor(camera, container){
         window.addEventListener('scroll', () =>{

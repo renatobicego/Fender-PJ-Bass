@@ -1,6 +1,3 @@
-import { gsap } from 'gsap'
-
-const tl = gsap.timeline()
 
 function setupModel(data){
     const model = data.scene.children[0]

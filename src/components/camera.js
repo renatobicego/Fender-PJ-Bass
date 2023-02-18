@@ -1,5 +1,4 @@
 import { PerspectiveCamera } from "three"
-import gsap from "gsap"
 
 const tl = new gsap.timeline()
 

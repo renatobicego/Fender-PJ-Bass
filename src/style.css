@@ -6,7 +6,7 @@ body {
     /* color text */
     color: white;  
     font-family: 'Poppins', sans-serif;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
   
 header {
@@ -31,7 +31,7 @@ header img {
 
 .inicial {
   align-items: baseline;
-  margin-left: 10vw;
+  margin-left: 10%;
   animation: fade-in 4s ease-in-out 5s 1 forwards;
 }
 
@@ -60,7 +60,7 @@ h3 span {
   align-items: flex-end;
   justify-content: center;
   text-align: right;
-  margin-right: 10vw;
+  margin-right: 10%;
   opacity: 0;
 }
 
@@ -74,7 +74,7 @@ h3 span {
 .tercero {
   align-items: baseline;
   padding-top: 10%;
-  margin-left: 10vw;
+  margin-left: 10%;
 }
 
 .cuarto {
@@ -84,7 +84,7 @@ h3 span {
 }
 
 .cuarto div {
-  margin-bottom: 7vw;
+  margin-bottom: 7%;
   text-align: center;
 }
 
@@ -121,3 +121,5 @@ h3 span {
     top: 0;
     z-index: -1;
 }
+
+

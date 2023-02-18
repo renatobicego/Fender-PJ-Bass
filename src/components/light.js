@@ -1,11 +1,11 @@
 import { SpotLight} from "three"
 
 function createLight(){
-    const light1 = new SpotLight('white', 250)
+    const light1 = new SpotLight('white', 20000)
     light1.castShadow = true    
-    const light2 = new SpotLight('white', 80)
+    const light2 = new SpotLight('white', 7000)
     light2.castShadow = true
-    const light3 = new SpotLight('white', 80)
+    const light3 = new SpotLight('white', 7000)
     light3.castShadow = true
     light1.shadow.mapSize.width = 1024; // default
     light1.shadow.mapSize.height = 1024; // default

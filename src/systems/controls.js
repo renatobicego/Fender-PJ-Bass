@@ -3,8 +3,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 function createControls(camera, canvas) {
     const controls = new OrbitControls(camera, canvas)
     //Not move obj with right click
-    controls.enablePan = false
     controls.enabled = false
+    controls.minDistance = 3
     controls.target.set(1, 0.5, 0)
     controls.viewGallery = () => controls.enabled = true
     controls.closeGallery = () => controls.enabled = true
