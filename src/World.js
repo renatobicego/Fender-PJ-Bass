@@ -51,10 +51,10 @@ class World {
         const bass = await createBass()
         scroll.addBass(bass)
         loop.updatables.push(bass)
-
+        
         const floor = createFloor()
         scene.add(floor, bass)
-
+        camera.animate()
         
     }
 
