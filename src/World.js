@@ -54,7 +54,6 @@ class World {
         
         const floor = createFloor()
         scene.add(floor, bass)
-        camera.animate()
         
     }
 
@@ -66,6 +65,7 @@ class World {
     // Start loop function
     start() {
         loop.start();
+        camera.animate()
       }
 
     // Stop loop
